@@ -60,7 +60,7 @@ export default function TopContainer() {
               <Link
                 color="blue.500"
                 target={"_blank"}
-                href={"https://github.com/Kiran691/panaverse-website"}
+                href={"https://github.com/Kiran691/panaverse-web"}
               >
                 Kiran Imran{" "}
               </Link>
