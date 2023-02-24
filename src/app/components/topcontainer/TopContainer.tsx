@@ -68,7 +68,7 @@ export default function TopContainer() {
           </Flex>
         </Box>
         <Box w="50%">
-          <Image src="images/banner5.png" />
+          <Image src="images/banner5.png" alt="pic1"/>
         </Box>
       </HStack>
     </Box>
