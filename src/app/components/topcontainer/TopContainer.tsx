@@ -7,6 +7,7 @@ import {
   Text,
   Button,
   Flex,
+  Hide,
 } from "@chakra-ui/react";
 import React from "react";
 import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
@@ -14,23 +15,29 @@ import Link from "next/link";
 export default function TopContainer() {
   return (
     <Box
-    as="section"
+      as="section"
       backgroundImage={"/images/background.png"}
       backgroundSize="contain"
+      backgroundAttachment={"fixed"}
       py="20"
       mt="5"
     >
       <HStack>
         {/* left */}
-        <Box w="50%" color={"white"} pl="44">
-          <Heading fontSize={"60"}>Build your next idea even faster</Heading>
+        <Box
+          w={{ base: "100%", lg: "50%" }}
+          color={"white"}
+          pl={{ base: "10", lg: "44" }}
+        >
+          <Heading fontSize={60}>Build your next idea even faster</Heading>
           <Text lineHeight={"8"}>
             One year Panaverse DAO Earn as you Learn Program.Consolidating Web
             3.0, Metaverse, Artificial intelligence (AI), Cloud, Edge and
             Ambient Computing/IoT Technoligies
           </Text>
-          <Box mt={"5"}>
-            <Button colorScheme={"blue"} mr={"4"}>
+
+          <Box mt="5">
+            <Button colorScheme={"blue"} mr="5">
               Buy Now
             </Button>
             <Button colorScheme={"blue"} variant="outline">
@@ -38,7 +45,7 @@ export default function TopContainer() {
             </Button>
           </Box>
           <Flex alignItems={"center"}>
-            <AvatarGroup size="md" max={2} mt="5">
+            <AvatarGroup size="md" max={3} mt="5">
               <Avatar
                 name="Zia Khan"
                 src="https://pbs.twimg.com/profile_images/1478630664190795778/xuBHOC65_400x400.jpg"
@@ -47,7 +54,7 @@ export default function TopContainer() {
                 name="Adil Altaf"
                 src="https://avatars.githubusercontent.com/u/62209503?v=4"
               />
-             
+
               <Avatar
                 name="Prosper Otemuyiwa"
                 src="https://bit.ly/prosper-baba"
@@ -67,9 +74,12 @@ export default function TopContainer() {
             </Text>
           </Flex>
         </Box>
+        {/*right*/}
+        <Hide below="lg">
         <Box w="50%">
-          <Image src="images/banner5.png" alt="pic1"/>
+          <Image src="images/banner5.png" alt="pic1" />
         </Box>
+        </Hide>
       </HStack>
     </Box>
   );

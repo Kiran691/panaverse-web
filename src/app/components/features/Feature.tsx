@@ -24,7 +24,7 @@ export default function Feature() {
         {/* 6 features*/}
 
       <Box>
-        <SimpleGrid columns={2} spacing={10}>  
+        <SimpleGrid columns={{base: 1, md: 2, lg: 3}} spacing={10}>  
         {/*feature 1*/}
         <Box>
           <HStack>
@@ -51,7 +51,7 @@ export default function Feature() {
               <Box>
                 <Heading fontSize={"18"}>Themable</Heading>
                 <Text>
-                Your style. Your brand. Customize the components as you need them. It's that simple.
+                Your style. Your brand. Customize the components as you need them. `&rsquo;` that simple.
                 </Text>
               </Box>
             </HStack>
@@ -82,7 +82,7 @@ export default function Feature() {
               <Box>
                 <Heading fontSize={"18"}>Themable</Heading>
                 <Text>
-                Your style. Your brand. Customize the components as you need them. It's that simple.
+                Your style. Your brand. Customize the components as you need them. `&lsquo;` that simple.
                 </Text>
               </Box>
             </HStack>
@@ -115,7 +115,7 @@ export default function Feature() {
               <Box>
                 <Heading fontSize={"18"}>Accessible</Heading>
                 <Text>
-                Accessibility first. That's why we pay attention to accessibility right from the start.
+                Accessibility first. `&apos;` why we pay attention to accessibility right from the start.
                 </Text>
               </Box>
             </HStack>
