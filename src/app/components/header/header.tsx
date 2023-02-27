@@ -19,19 +19,15 @@ import { PhoneIcon, AddIcon, WarningIcon } from "@chakra-ui/icons";
 import { SearchIcon } from "@chakra-ui/icons";
 import { MoonIcon } from "@chakra-ui/icons";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import NavMenu from "./NavMenu";
-// import {ColorModeSwitcher} from "./ColorModeSwitcher";
-// import Burger from "./Burger";
+
 export default function Header() {
-  
-    const { colorMode } = useColorMode();
-    return (
+  const { colorMode } = useColorMode();
+  return (
     <Box as="header" top="0" zIndex={1}>
-      {/*left area*/}
       <Flex
         justifyContent={"space-around"}
         alignItems={"center"}
-         bg={"white"}
+        bg={"white"}
         py="5"
       >
         <Box>
@@ -39,33 +35,28 @@ export default function Header() {
             <Image src="/images/Logo png.webp" alt="logo" />
             <Hide below="md">
               <List>
-
-              <HStack align={"center"} spacing={10} fontWeight="bold" ml="40px">
-                <ListItem> Home</ListItem>
-                <ListItem> About</ListItem>
-                <ListItem>Contact</ListItem>
-              </HStack>
-            </List>
-              <HStack spacing={10} pl="10">
-                 {/* <NavMenu /> */}
-              </HStack>
+                <HStack
+                  align={"center"}
+                  spacing={10}
+                  fontWeight="bold"
+                  ml="40px"
+                >
+                  <ListItem> Home</ListItem>
+                  <ListItem> About</ListItem>
+                  <ListItem>Contact</ListItem>
+                </HStack>
+              </List>
+              <HStack spacing={10} pl="10"></HStack>
             </Hide>
           </HStack>
         </Box>
-        {/*right area*/}
+
         <HStack>
           <Box pl="15">
             <SearchIcon w="25" h="25" />
           </Box>
-          {/* <Box pl="15">
-            <MoonIcon w="25" h="25" />
-          </Box> */}
-          {/* <ColorModeSwitcher/> */}
-          <Show below="md">
-            {/* <Burger /> */}
-            {/* <GiHamburgerMenu size={25} /> */}
 
-          </Show>
+          <Show below="md"></Show>
           <Link href="https://www.piaic.org/" target={"_blank"}>
             <Button variant={"outline"}>Go to Piaic</Button>
           </Link>
