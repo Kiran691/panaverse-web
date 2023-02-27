@@ -51,7 +51,7 @@ export default function Feature() {
               <Box>
                 <Heading fontSize={"18"}>Themable</Heading>
                 <Text>
-                Your style. Your brand. Customize the components as you need them.It's that simple.
+                Your style. Your brand. Customize the components as you need them.It&apos;s that simple.
                 </Text>
               </Box>
             </HStack>
@@ -82,7 +82,7 @@ export default function Feature() {
               <Box>
                 <Heading fontSize={"18"}>Themable</Heading>
                 <Text>
-                Your style. Your brand. Customize the components as you need them.It's that simple.
+                Your style. Your brand. Customize the components as you need them.It&apos;s that simple.
                 </Text>
               </Box>
             </HStack>
@@ -115,7 +115,7 @@ export default function Feature() {
               <Box>
                 <Heading fontSize={"18"}>Accessible</Heading>
                 <Text>
-                Accessibility first. That's why we pay attention to accessibility right from the start.
+                Accessibility first. That why we pay attention to accessibility right from the start.
                 </Text>
               </Box>
             </HStack>
