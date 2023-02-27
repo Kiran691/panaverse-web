@@ -45,7 +45,7 @@ export default function TopContainer() {
             </Button>
           </Box>
           <Flex alignItems={"center"}>
-            <AvatarGroup size="md" max={3} mt="5">
+            <AvatarGroup size="md" max={2} mt="5">
               <Avatar
                 name="Zia Khan"
                 src="https://pbs.twimg.com/profile_images/1478630664190795778/xuBHOC65_400x400.jpg"
@@ -55,11 +55,11 @@ export default function TopContainer() {
                 src="https://avatars.githubusercontent.com/u/62209503?v=4"
               />
 
-              <Avatar
+              {/* <Avatar
                 name="Prosper Otemuyiwa"
                 src="https://bit.ly/prosper-baba"
               />
-              <Avatar name="Christian Nwamba" src="https://bit.ly/code-beast" />
+              <Avatar name="Christian Nwamba" src="https://bit.ly/code-beast" /> */}
             </AvatarGroup>
 
             <Text mt="5" ml="3">

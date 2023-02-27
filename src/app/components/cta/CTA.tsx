@@ -18,7 +18,7 @@ export default function CTA() {
           <Box flex={3}>
             <Heading>Try our free components</Heading>
             <Text fontSize={"20px"}>
-              You `&rsquo;` have to buy a pig in a poke - you can experience our
+              You don't have to buy a pig in a poke - you can experience our
               free community components before making a purchase decision.
             </Text>
           </Box>

@@ -19,33 +19,35 @@ import { PhoneIcon, AddIcon, WarningIcon } from "@chakra-ui/icons";
 import { SearchIcon } from "@chakra-ui/icons";
 import { MoonIcon } from "@chakra-ui/icons";
 import { GiHamburgerMenu } from "react-icons/gi";
-import NavMenu from "./NavMenu";
-import ColorModeSwitcher from "./ColorModeSwitcher";
+// import NavMenu from "./NavMenu";
+// import {ColorModeSwitcher} from "./ColorModeSwitcher";
+// import Burger from "./Burger";
 export default function Header() {
-  return (
+  
     const { colorMode } = useColorMode();
-    <Box as="header" position={"sticky"} top="0" zIndex={1}>
+    return (
+    <Box as="header" top="0" zIndex={1}>
       {/*left area*/}
       <Flex
         justifyContent={"space-around"}
         alignItems={"center"}
-        bg={colorMode == "dark" ? "black": "gray"}
+         bg={"white"}
         py="5"
       >
         <Box>
           <HStack>
             <Image src="/images/Logo png.webp" alt="logo" />
             <Hide below="md">
-              {/* <List>
+              <List>
 
               <HStack align={"center"} spacing={10} fontWeight="bold" ml="40px">
                 <ListItem> Home</ListItem>
                 <ListItem> About</ListItem>
                 <ListItem>Contact</ListItem>
               </HStack>
-            </List> */}
+            </List>
               <HStack spacing={10} pl="10">
-                {/* <NavMenu /> */}
+                 {/* <NavMenu /> */}
               </HStack>
             </Hide>
           </HStack>
@@ -58,9 +60,11 @@ export default function Header() {
           {/* <Box pl="15">
             <MoonIcon w="25" h="25" />
           </Box> */}
-          <ColorModeSwitcher/>
+          {/* <ColorModeSwitcher/> */}
           <Show below="md">
-            <GiHamburgerMenu size={25} />
+            {/* <Burger /> */}
+            {/* <GiHamburgerMenu size={25} /> */}
+
           </Show>
           <Link href="https://www.piaic.org/" target={"_blank"}>
             <Button variant={"outline"}>Go to Piaic</Button>
